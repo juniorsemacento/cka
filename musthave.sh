@@ -8,3 +8,4 @@ alias kdp='k delete pod '
 export nk='-n kube-system'
 export n='-n important-ns' # set this as needed
 export now='--grace-period 0 --force'
+jq -r 'path(..) | map(tostring) | join(".")'
